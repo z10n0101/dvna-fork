@@ -1,0 +1,87 @@
+{
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Glog.AI",
+          "organization": "Glog.AI",
+          "fullName": "Glog, Making software more secure",
+          "version": "1.0.0",
+          "semanticVersion": "1.0.0",
+          "informationUri": "https://www.glog.ai",
+          "rules": [
+            {
+              "id": "glog-8eb6f481-d277-4ee0-9a6b-166680d4f445",
+              "help": {
+                "text": "",
+                "markdown": "### Description\n\nThe \"Evaluation of Untrusted Data\" vulnerability occurs when a JavaScript application evaluates or executes code that is derived from user input without proper validation or sanitization. This can lead to serious security risks, such as code injection attacks, where an attacker can execute arbitrary code on the server. In the provided code snippet, the use of `eval(req.body.eqn)` is a direct example of this vulnerability, as it evaluates a string from user input without any checks.\n\n### General Mitigation Advice\n\n1. **Avoid `eval`**: Refrain from using `eval` or similar functions that execute code from strings. Instead, use safer alternatives or libraries that provide the required functionality without executing arbitrary code.\n2. **Input Validation and Sanitization**: Always validate and sanitize user inputs to ensure they conform to expected formats and do not contain malicious code.\n3. **Use Secure Libraries**: Utilize libraries that are designed to safely parse and evaluate expressions without executing arbitrary code.\n4. **Least Privilege Principle**: Run your application with the least privileges necessary to limit the impact of a potential attack.\n\n### Source Code Fix Recommendation\n\nReplace the use of `eval` with a safer alternative. For mathematical expressions, consider using a library like `mathjs` to safely evaluate expressions.\n\n```javascript\nconst math = require('mathjs');\n\napp.post('/evaluate', (req, res) => {\n    try {\n        const result = math.evaluate(req.body.eqn);\n        res.send({ result });\n    } catch (error) {\n        res.status(400).send({ error: 'Invalid expression' });\n    }\n});\n```\n\n### Library Dependencies\n\nTo execute the fixed code example, you need the following library:\n\n- `mathjs`: A library for evaluating mathematical expressions safely.\n\nYou can install it using npm:\n\n```bash\nnpm install mathjs\n```\n\n### Relevant OWASP Resources\n\n- [OWASP Top Ten Project](https://owasp.org/www-project-top-ten/)\n\n### Common Weakness Enumeration (CWE)\n\n- [CWE-95: Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')](https://cwe.mitre.org/data/definitions/95.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS189424"
+                ]
+              }
+            }
+          ],
+          "language": "en-US",
+          "contents": [
+            "localizedData",
+            "nonLocalizedData"
+          ],
+          "isComprehensive": false
+        }
+      },
+      "language": "en-US",
+      "results": [
+        {
+          "ruleId": "glog-8eb6f481-d277-4ee0-9a6b-166680d4f445",
+          "kind": "fail",
+          "level": "note",
+          "message": {
+            "text": "Review eval for untrusted data"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "core/appHandler.js"
+                },
+                "region": {
+                  "startLine": 197,
+                  "startColumn": 18,
+                  "endLine": 198,
+                  "endColumn": 4,
+                  "charOffset": 4092,
+                  "charLength": 23,
+                  "snippet": {
+                    "text": "eval(req.body.eqn)\n\t\t})",
+                    "rendered": {
+                      "text": "eval(req.body.eqn)\n\t\t})",
+                      "markdown": "`eval(req.body.eqn)\n\t\t})`"
+                    }
+                  },
+                  "sourceLanguage": "javascript"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "ManualReview",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Python.DangerousFunctionCall",
+              "JavaScript.DangerousFunctionCall",
+              "TypeScript.DangerousFunctionCall",
+              "PHP.DangerousFunctionCall"
+            ]
+          }
+        }
+      ],
+      "newlineSequences": [
+        "\r\n",
+        "\n"
+      ]
+    }
+  ]
+}
