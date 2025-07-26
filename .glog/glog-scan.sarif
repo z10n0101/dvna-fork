@@ -12,7 +12,7 @@
           "informationUri": "https://www.glog.ai",
           "rules": [
             {
-              "id": "glog-29846318-45bb-4ad2-9be8-900d8d7ee49e",
+              "id": "glog-702852b2-09ea-4fb0-b6ac-a67a04cffe80",
               "name": "yaml.github-actions.security.run-shell-injection.run-shell-injection",
               "shortDescription": {
                 "text": "Semgrep Finding: yaml.github-actions.security.run-shell-injection.run-shell-injection"
@@ -37,32 +37,32 @@
               }
             },
             {
-              "id": "glog-37b3fee2-b662-4f40-a2d2-f6358d5aa35f",
-              "name": "javascript.sequelize.security.audit.sequelize-enforce-tls.sequelize-enforce-tls",
+              "id": "glog-4356eba8-6eaf-4f25-8232-08c1159301dc",
+              "name": "yaml.github-actions.security.run-shell-injection.run-shell-injection",
               "shortDescription": {
-                "text": "Semgrep Finding: javascript.sequelize.security.audit.sequelize-enforce-tls.sequelize-enforce-tls"
+                "text": "Semgrep Finding: yaml.github-actions.security.run-shell-injection.run-shell-injection"
               },
               "fullDescription": {
-                "text": "If TLS is disabled on server side (Postgresql server), Sequelize establishes connection without TLS and no error will be thrown. To prevent MITN (Man In The Middle) attack, TLS must be enforce by Sequelize. Set \"ssl: true\" or define settings \"ssl: {...}\""
+                "text": "Using variable interpolation `${{...}}` with `github` context data in a `run:` step could allow an attacker to inject their own code into the runner. This would allow them to steal secrets and code. `github` context data can have arbitrary user input and should be treated as untrusted. Instead, use an intermediate environment variable with `env:` to store the data and use the environment variable in the `run:` script. Be sure to use double-quotes the environment variable, like this: \"$ENVVAR\"."
               },
               "defaultConfiguration": {
                 "enabled": true,
-                "level": "warning"
+                "level": "error"
               },
-              "helpUri": "https://semgrep.dev/r/javascript.sequelize.security.audit.sequelize-enforce-tls.sequelize-enforce-tls",
+              "helpUri": "https://semgrep.dev/r/yaml.github-actions.security.run-shell-injection.run-shell-injection",
               "help": {
-                "text": "If TLS is disabled on server side (Postgresql server), Sequelize establishes connection without TLS and no error will be thrown. To prevent MITN (Man In The Middle) attack, TLS must be enforce by Sequelize. Set \"ssl: true\" or define settings \"ssl: {...}\"\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "If TLS is disabled on server side (Postgresql server), Sequelize establishes connection without TLS and no error will be thrown. To prevent MITN (Man In The Middle) attack, TLS must be enforce by Sequelize. Set \"ssl: true\" or define settings \"ssl: {...}\"\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [Semgrep Rule](https://semgrep.dev/r/javascript.sequelize.security.audit.sequelize-enforce-tls.sequelize-enforce-tls)\n - [https://node-postgres.com/features/ssl](https://node-postgres.com/features/ssl)\n - [https://nodejs.org/api/tls.html#tls_class_tls_tlssocket](https://nodejs.org/api/tls.html#tls_class_tls_tlssocket)\n - [https://nodejs.org/api/tls.html#tls_tls_createsecurecontext_options](https://nodejs.org/api/tls.html#tls_tls_createsecurecontext_options)\n - [https://nodejs.org/api/tls.html#tls_tls_default_min_version](https://nodejs.org/api/tls.html#tls_tls_default_min_version)\n"
+                "text": "Using variable interpolation `${{...}}` with `github` context data in a `run:` step could allow an attacker to inject their own code into the runner. This would allow them to steal secrets and code. `github` context data can have arbitrary user input and should be treated as untrusted. Instead, use an intermediate environment variable with `env:` to store the data and use the environment variable in the `run:` script. Be sure to use double-quotes the environment variable, like this: \"$ENVVAR\".\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Using variable interpolation `${{...}}` with `github` context data in a `run:` step could allow an attacker to inject their own code into the runner. This would allow them to steal secrets and code. `github` context data can have arbitrary user input and should be treated as untrusted. Instead, use an intermediate environment variable with `env:` to store the data and use the environment variable in the `run:` script. Be sure to use double-quotes the environment variable, like this: \"$ENVVAR\".\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [Semgrep Rule](https://semgrep.dev/r/yaml.github-actions.security.run-shell-injection.run-shell-injection)\n - [https://docs.github.com/en/actions/learn-github-actions/security-hardening-for-github-actions#understanding-the-risk-of-script-injections](https://docs.github.com/en/actions/learn-github-actions/security-hardening-for-github-actions#understanding-the-risk-of-script-injections)\n - [https://securitylab.github.com/research/github-actions-untrusted-input/](https://securitylab.github.com/research/github-actions-untrusted-input/)\n"
               },
               "properties": {
                 "precision": "very-high",
                 "tags": [
-                  "javascript.sequelize.security.audit.sequelize-enforce-tls.sequelize-enforce-tls"
+                  "yaml.github-actions.security.run-shell-injection.run-shell-injection"
                 ]
               }
             },
             {
-              "id": "glog-f64dc30f-6fa1-470f-8063-28713746ed15",
+              "id": "glog-5382c16c-a32e-4158-a9d0-fc09768c5337",
               "name": "dockerfile.security.missing-user.missing-user",
               "shortDescription": {
                 "text": "Semgrep Finding: dockerfile.security.missing-user.missing-user"
@@ -87,32 +87,32 @@
               }
             },
             {
-              "id": "glog-c90ea080-d4d6-48d5-94ad-7de42926e1af",
-              "name": "yaml.github-actions.security.run-shell-injection.run-shell-injection",
+              "id": "glog-793c923d-c55c-4666-aea5-302215cf9429",
+              "name": "javascript.sequelize.security.audit.sequelize-enforce-tls.sequelize-enforce-tls",
               "shortDescription": {
-                "text": "Semgrep Finding: yaml.github-actions.security.run-shell-injection.run-shell-injection"
+                "text": "Semgrep Finding: javascript.sequelize.security.audit.sequelize-enforce-tls.sequelize-enforce-tls"
               },
               "fullDescription": {
-                "text": "Using variable interpolation `${{...}}` with `github` context data in a `run:` step could allow an attacker to inject their own code into the runner. This would allow them to steal secrets and code. `github` context data can have arbitrary user input and should be treated as untrusted. Instead, use an intermediate environment variable with `env:` to store the data and use the environment variable in the `run:` script. Be sure to use double-quotes the environment variable, like this: \"$ENVVAR\"."
+                "text": "If TLS is disabled on server side (Postgresql server), Sequelize establishes connection without TLS and no error will be thrown. To prevent MITN (Man In The Middle) attack, TLS must be enforce by Sequelize. Set \"ssl: true\" or define settings \"ssl: {...}\""
               },
               "defaultConfiguration": {
                 "enabled": true,
-                "level": "error"
+                "level": "warning"
               },
-              "helpUri": "https://semgrep.dev/r/yaml.github-actions.security.run-shell-injection.run-shell-injection",
+              "helpUri": "https://semgrep.dev/r/javascript.sequelize.security.audit.sequelize-enforce-tls.sequelize-enforce-tls",
               "help": {
-                "text": "Using variable interpolation `${{...}}` with `github` context data in a `run:` step could allow an attacker to inject their own code into the runner. This would allow them to steal secrets and code. `github` context data can have arbitrary user input and should be treated as untrusted. Instead, use an intermediate environment variable with `env:` to store the data and use the environment variable in the `run:` script. Be sure to use double-quotes the environment variable, like this: \"$ENVVAR\".\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Using variable interpolation `${{...}}` with `github` context data in a `run:` step could allow an attacker to inject their own code into the runner. This would allow them to steal secrets and code. `github` context data can have arbitrary user input and should be treated as untrusted. Instead, use an intermediate environment variable with `env:` to store the data and use the environment variable in the `run:` script. Be sure to use double-quotes the environment variable, like this: \"$ENVVAR\".\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [Semgrep Rule](https://semgrep.dev/r/yaml.github-actions.security.run-shell-injection.run-shell-injection)\n - [https://docs.github.com/en/actions/learn-github-actions/security-hardening-for-github-actions#understanding-the-risk-of-script-injections](https://docs.github.com/en/actions/learn-github-actions/security-hardening-for-github-actions#understanding-the-risk-of-script-injections)\n - [https://securitylab.github.com/research/github-actions-untrusted-input/](https://securitylab.github.com/research/github-actions-untrusted-input/)\n"
+                "text": "If TLS is disabled on server side (Postgresql server), Sequelize establishes connection without TLS and no error will be thrown. To prevent MITN (Man In The Middle) attack, TLS must be enforce by Sequelize. Set \"ssl: true\" or define settings \"ssl: {...}\"\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "If TLS is disabled on server side (Postgresql server), Sequelize establishes connection without TLS and no error will be thrown. To prevent MITN (Man In The Middle) attack, TLS must be enforce by Sequelize. Set \"ssl: true\" or define settings \"ssl: {...}\"\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [Semgrep Rule](https://semgrep.dev/r/javascript.sequelize.security.audit.sequelize-enforce-tls.sequelize-enforce-tls)\n - [https://node-postgres.com/features/ssl](https://node-postgres.com/features/ssl)\n - [https://nodejs.org/api/tls.html#tls_class_tls_tlssocket](https://nodejs.org/api/tls.html#tls_class_tls_tlssocket)\n - [https://nodejs.org/api/tls.html#tls_tls_createsecurecontext_options](https://nodejs.org/api/tls.html#tls_tls_createsecurecontext_options)\n - [https://nodejs.org/api/tls.html#tls_tls_default_min_version](https://nodejs.org/api/tls.html#tls_tls_default_min_version)\n"
               },
               "properties": {
                 "precision": "very-high",
                 "tags": [
-                  "yaml.github-actions.security.run-shell-injection.run-shell-injection"
+                  "javascript.sequelize.security.audit.sequelize-enforce-tls.sequelize-enforce-tls"
                 ]
               }
             },
             {
-              "id": "glog-2aa45d84-8383-4c5a-a9ea-aa406a57b71d",
+              "id": "glog-ffbf0567-6eaf-4651-b024-eddb8fce4d23",
               "name": "javascript.sequelize.security.audit.sequelize-injection-express.express-sequelize-injection",
               "shortDescription": {
                 "text": "Semgrep Finding: javascript.sequelize.security.audit.sequelize-injection-express.express-sequelize-injection"
@@ -137,7 +137,7 @@
               }
             },
             {
-              "id": "glog-5d541461-c89a-41eb-a287-a343c887c1f4",
+              "id": "glog-a14f7379-b784-488a-851c-b7824ad39881",
               "name": "javascript.express.security.audit.express-open-redirect.express-open-redirect",
               "shortDescription": {
                 "text": "Semgrep Finding: javascript.express.security.audit.express-open-redirect.express-open-redirect"
@@ -162,7 +162,7 @@
               }
             },
             {
-              "id": "glog-8469e904-59d4-4c88-b200-740851da8d29",
+              "id": "glog-559db094-75d6-437f-80e5-4ed3da056477",
               "name": "javascript.express.security.audit.express-third-party-object-deserialization.express-third-party-object-deserialization",
               "shortDescription": {
                 "text": "Semgrep Finding: javascript.express.security.audit.express-third-party-object-deserialization.express-third-party-object-deserialization"
@@ -187,82 +187,7 @@
               }
             },
             {
-              "id": "glog-7857739d-a55d-48e4-b22c-6e30afc874eb",
-              "name": "javascript.express.security.audit.express-libxml-noent.express-libxml-noent",
-              "shortDescription": {
-                "text": "Semgrep Finding: javascript.express.security.audit.express-libxml-noent.express-libxml-noent"
-              },
-              "fullDescription": {
-                "text": "The libxml library processes user-input with the `noent` attribute is set to `true` which can lead to being vulnerable to XML External Entities (XXE) type attacks. It is recommended to set `noent` to `false` when using this feature to ensure you are protected."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "error"
-              },
-              "helpUri": "https://semgrep.dev/r/javascript.express.security.audit.express-libxml-noent.express-libxml-noent",
-              "help": {
-                "text": "The libxml library processes user-input with the `noent` attribute is set to `true` which can lead to being vulnerable to XML External Entities (XXE) type attacks. It is recommended to set `noent` to `false` when using this feature to ensure you are protected.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "The libxml library processes user-input with the `noent` attribute is set to `true` which can lead to being vulnerable to XML External Entities (XXE) type attacks. It is recommended to set `noent` to `false` when using this feature to ensure you are protected.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [Semgrep Rule](https://semgrep.dev/r/javascript.express.security.audit.express-libxml-noent.express-libxml-noent)\n - [https://cheatsheetseries.owasp.org/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.html)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "javascript.express.security.audit.express-libxml-noent.express-libxml-noent"
-                ]
-              }
-            },
-            {
-              "id": "glog-85c94314-6755-4b5f-99c7-519240468379",
-              "name": "javascript.lang.security.audit.path-traversal.path-join-resolve-traversal.path-join-resolve-traversal",
-              "shortDescription": {
-                "text": "Semgrep Finding: javascript.lang.security.audit.path-traversal.path-join-resolve-traversal.path-join-resolve-traversal"
-              },
-              "fullDescription": {
-                "text": "Detected possible user input going into a `path.join` or `path.resolve` function. This could possibly lead to a path traversal vulnerability,  where the attacker can access arbitrary files stored in the file system. Instead, be sure to sanitize or validate user input first."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "helpUri": "https://semgrep.dev/r/javascript.lang.security.audit.path-traversal.path-join-resolve-traversal.path-join-resolve-traversal",
-              "help": {
-                "text": "Detected possible user input going into a `path.join` or `path.resolve` function. This could possibly lead to a path traversal vulnerability,  where the attacker can access arbitrary files stored in the file system. Instead, be sure to sanitize or validate user input first.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Detected possible user input going into a `path.join` or `path.resolve` function. This could possibly lead to a path traversal vulnerability,  where the attacker can access arbitrary files stored in the file system. Instead, be sure to sanitize or validate user input first.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [Semgrep Rule](https://semgrep.dev/r/javascript.lang.security.audit.path-traversal.path-join-resolve-traversal.path-join-resolve-traversal)\n - [https://owasp.org/www-community/attacks/Path_Traversal](https://owasp.org/www-community/attacks/Path_Traversal)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "javascript.lang.security.audit.path-traversal.path-join-resolve-traversal.path-join-resolve-traversal"
-                ]
-              }
-            },
-            {
-              "id": "glog-871ec2e2-6962-4037-9254-8772c5496e19",
-              "name": "yaml.docker-compose.security.writable-filesystem-service.writable-filesystem-service",
-              "shortDescription": {
-                "text": "Semgrep Finding: yaml.docker-compose.security.writable-filesystem-service.writable-filesystem-service"
-              },
-              "fullDescription": {
-                "text": "Service '$SERVICE' is running with a writable root filesystem. This may allow malicious applications to download and run additional payloads, or modify container files. If an application inside a container has to save something temporarily consider using a tmpfs. Add 'read_only: true' to this service to prevent this."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "helpUri": "https://semgrep.dev/r/yaml.docker-compose.security.writable-filesystem-service.writable-filesystem-service",
-              "help": {
-                "text": "Service '$SERVICE' is running with a writable root filesystem. This may allow malicious applications to download and run additional payloads, or modify container files. If an application inside a container has to save something temporarily consider using a tmpfs. Add 'read_only: true' to this service to prevent this.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Service '$SERVICE' is running with a writable root filesystem. This may allow malicious applications to download and run additional payloads, or modify container files. If an application inside a container has to save something temporarily consider using a tmpfs. Add 'read_only: true' to this service to prevent this.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [Semgrep Rule](https://semgrep.dev/r/yaml.docker-compose.security.writable-filesystem-service.writable-filesystem-service)\n - [https://docs.docker.com/compose/compose-file/compose-file-v3/#domainname-hostname-ipc-mac_address-privileged-read_only-shm_size-stdin_open-tty-user-working_dir](https://docs.docker.com/compose/compose-file/compose-file-v3/#domainname-hostname-ipc-mac_address-privileged-read_only-shm_size-stdin_open-tty-user-working_dir)\n - [https://blog.atomist.com/security-of-docker-kubernetes/](https://blog.atomist.com/security-of-docker-kubernetes/)\n - [https://cheatsheetseries.owasp.org/cheatsheets/Docker_Security_Cheat_Sheet.html#rule-8-set-filesystem-and-volumes-to-read-only](https://cheatsheetseries.owasp.org/cheatsheets/Docker_Security_Cheat_Sheet.html#rule-8-set-filesystem-and-volumes-to-read-only)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "yaml.docker-compose.security.writable-filesystem-service.writable-filesystem-service"
-                ]
-              }
-            },
-            {
-              "id": "glog-765d070e-1f8f-43c9-b481-5af1f8563bba",
+              "id": "glog-1669147b-cde1-42bc-ad77-361f0217ec09",
               "name": "yaml.docker-compose.security.no-new-privileges.no-new-privileges",
               "shortDescription": {
                 "text": "Semgrep Finding: yaml.docker-compose.security.no-new-privileges.no-new-privileges"
@@ -287,32 +212,82 @@
               }
             },
             {
-              "id": "glog-68faa819-8734-4ec0-ba73-868b3f3f6b59",
-              "name": "javascript.express.security.audit.express-check-csurf-middleware-usage.express-check-csurf-middleware-usage",
+              "id": "glog-b226f886-08d1-4c60-af41-b212195ce344",
+              "name": "javascript.express.security.audit.express-libxml-noent.express-libxml-noent",
               "shortDescription": {
-                "text": "Semgrep Finding: javascript.express.security.audit.express-check-csurf-middleware-usage.express-check-csurf-middleware-usage"
+                "text": "Semgrep Finding: javascript.express.security.audit.express-libxml-noent.express-libxml-noent"
               },
               "fullDescription": {
-                "text": "A CSRF middleware was not detected in your express application. Ensure you are either using one such as `csurf` or `csrf` (see rule references) and/or you are properly doing CSRF validation in your routes with a token or cookies."
+                "text": "The libxml library processes user-input with the `noent` attribute is set to `true` which can lead to being vulnerable to XML External Entities (XXE) type attacks. It is recommended to set `noent` to `false` when using this feature to ensure you are protected."
               },
               "defaultConfiguration": {
                 "enabled": true,
-                "level": "note"
+                "level": "error"
               },
-              "helpUri": "https://semgrep.dev/r/javascript.express.security.audit.express-check-csurf-middleware-usage.express-check-csurf-middleware-usage",
+              "helpUri": "https://semgrep.dev/r/javascript.express.security.audit.express-libxml-noent.express-libxml-noent",
               "help": {
-                "text": "A CSRF middleware was not detected in your express application. Ensure you are either using one such as `csurf` or `csrf` (see rule references) and/or you are properly doing CSRF validation in your routes with a token or cookies.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "A CSRF middleware was not detected in your express application. Ensure you are either using one such as `csurf` or `csrf` (see rule references) and/or you are properly doing CSRF validation in your routes with a token or cookies.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [Semgrep Rule](https://semgrep.dev/r/javascript.express.security.audit.express-check-csurf-middleware-usage.express-check-csurf-middleware-usage)\n - [https://www.npmjs.com/package/csurf](https://www.npmjs.com/package/csurf)\n - [https://www.npmjs.com/package/csrf](https://www.npmjs.com/package/csrf)\n - [https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html)\n"
+                "text": "The libxml library processes user-input with the `noent` attribute is set to `true` which can lead to being vulnerable to XML External Entities (XXE) type attacks. It is recommended to set `noent` to `false` when using this feature to ensure you are protected.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "The libxml library processes user-input with the `noent` attribute is set to `true` which can lead to being vulnerable to XML External Entities (XXE) type attacks. It is recommended to set `noent` to `false` when using this feature to ensure you are protected.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [Semgrep Rule](https://semgrep.dev/r/javascript.express.security.audit.express-libxml-noent.express-libxml-noent)\n - [https://cheatsheetseries.owasp.org/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.html)\n"
               },
               "properties": {
                 "precision": "very-high",
                 "tags": [
-                  "javascript.express.security.audit.express-check-csurf-middleware-usage.express-check-csurf-middleware-usage"
+                  "javascript.express.security.audit.express-libxml-noent.express-libxml-noent"
                 ]
               }
             },
             {
-              "id": "glog-e5bfe833-b01f-48b7-b34b-1e233fd8eb2a",
+              "id": "glog-58628f87-aaa6-4630-bfee-994715b22c1e",
+              "name": "yaml.docker-compose.security.writable-filesystem-service.writable-filesystem-service",
+              "shortDescription": {
+                "text": "Semgrep Finding: yaml.docker-compose.security.writable-filesystem-service.writable-filesystem-service"
+              },
+              "fullDescription": {
+                "text": "Service '$SERVICE' is running with a writable root filesystem. This may allow malicious applications to download and run additional payloads, or modify container files. If an application inside a container has to save something temporarily consider using a tmpfs. Add 'read_only: true' to this service to prevent this."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "helpUri": "https://semgrep.dev/r/yaml.docker-compose.security.writable-filesystem-service.writable-filesystem-service",
+              "help": {
+                "text": "Service '$SERVICE' is running with a writable root filesystem. This may allow malicious applications to download and run additional payloads, or modify container files. If an application inside a container has to save something temporarily consider using a tmpfs. Add 'read_only: true' to this service to prevent this.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Service '$SERVICE' is running with a writable root filesystem. This may allow malicious applications to download and run additional payloads, or modify container files. If an application inside a container has to save something temporarily consider using a tmpfs. Add 'read_only: true' to this service to prevent this.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [Semgrep Rule](https://semgrep.dev/r/yaml.docker-compose.security.writable-filesystem-service.writable-filesystem-service)\n - [https://docs.docker.com/compose/compose-file/compose-file-v3/#domainname-hostname-ipc-mac_address-privileged-read_only-shm_size-stdin_open-tty-user-working_dir](https://docs.docker.com/compose/compose-file/compose-file-v3/#domainname-hostname-ipc-mac_address-privileged-read_only-shm_size-stdin_open-tty-user-working_dir)\n - [https://blog.atomist.com/security-of-docker-kubernetes/](https://blog.atomist.com/security-of-docker-kubernetes/)\n - [https://cheatsheetseries.owasp.org/cheatsheets/Docker_Security_Cheat_Sheet.html#rule-8-set-filesystem-and-volumes-to-read-only](https://cheatsheetseries.owasp.org/cheatsheets/Docker_Security_Cheat_Sheet.html#rule-8-set-filesystem-and-volumes-to-read-only)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "yaml.docker-compose.security.writable-filesystem-service.writable-filesystem-service"
+                ]
+              }
+            },
+            {
+              "id": "glog-ee70c802-bd82-4a1b-8955-aac005b7d438",
+              "name": "javascript.lang.security.audit.path-traversal.path-join-resolve-traversal.path-join-resolve-traversal",
+              "shortDescription": {
+                "text": "Semgrep Finding: javascript.lang.security.audit.path-traversal.path-join-resolve-traversal.path-join-resolve-traversal"
+              },
+              "fullDescription": {
+                "text": "Detected possible user input going into a `path.join` or `path.resolve` function. This could possibly lead to a path traversal vulnerability,  where the attacker can access arbitrary files stored in the file system. Instead, be sure to sanitize or validate user input first."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "helpUri": "https://semgrep.dev/r/javascript.lang.security.audit.path-traversal.path-join-resolve-traversal.path-join-resolve-traversal",
+              "help": {
+                "text": "Detected possible user input going into a `path.join` or `path.resolve` function. This could possibly lead to a path traversal vulnerability,  where the attacker can access arbitrary files stored in the file system. Instead, be sure to sanitize or validate user input first.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Detected possible user input going into a `path.join` or `path.resolve` function. This could possibly lead to a path traversal vulnerability,  where the attacker can access arbitrary files stored in the file system. Instead, be sure to sanitize or validate user input first.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [Semgrep Rule](https://semgrep.dev/r/javascript.lang.security.audit.path-traversal.path-join-resolve-traversal.path-join-resolve-traversal)\n - [https://owasp.org/www-community/attacks/Path_Traversal](https://owasp.org/www-community/attacks/Path_Traversal)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "javascript.lang.security.audit.path-traversal.path-join-resolve-traversal.path-join-resolve-traversal"
+                ]
+              }
+            },
+            {
+              "id": "glog-d5d8f3f9-ec28-43de-816a-7187b79f2f46",
               "name": "javascript.express.security.audit.express-cookie-settings.express-cookie-session-default-name",
               "shortDescription": {
                 "text": "Semgrep Finding: javascript.express.security.audit.express-cookie-settings.express-cookie-session-default-name"
@@ -337,7 +312,32 @@
               }
             },
             {
-              "id": "glog-85e6284d-c40a-4bb4-97d5-0175d52a23ae",
+              "id": "glog-cdb04f7c-6a6b-4aae-b024-a2a4ff55ca62",
+              "name": "javascript.express.security.audit.express-check-csurf-middleware-usage.express-check-csurf-middleware-usage",
+              "shortDescription": {
+                "text": "Semgrep Finding: javascript.express.security.audit.express-check-csurf-middleware-usage.express-check-csurf-middleware-usage"
+              },
+              "fullDescription": {
+                "text": "A CSRF middleware was not detected in your express application. Ensure you are either using one such as `csurf` or `csrf` (see rule references) and/or you are properly doing CSRF validation in your routes with a token or cookies."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "note"
+              },
+              "helpUri": "https://semgrep.dev/r/javascript.express.security.audit.express-check-csurf-middleware-usage.express-check-csurf-middleware-usage",
+              "help": {
+                "text": "A CSRF middleware was not detected in your express application. Ensure you are either using one such as `csurf` or `csrf` (see rule references) and/or you are properly doing CSRF validation in your routes with a token or cookies.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "A CSRF middleware was not detected in your express application. Ensure you are either using one such as `csurf` or `csrf` (see rule references) and/or you are properly doing CSRF validation in your routes with a token or cookies.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [Semgrep Rule](https://semgrep.dev/r/javascript.express.security.audit.express-check-csurf-middleware-usage.express-check-csurf-middleware-usage)\n - [https://www.npmjs.com/package/csurf](https://www.npmjs.com/package/csurf)\n - [https://www.npmjs.com/package/csrf](https://www.npmjs.com/package/csrf)\n - [https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "javascript.express.security.audit.express-check-csurf-middleware-usage.express-check-csurf-middleware-usage"
+                ]
+              }
+            },
+            {
+              "id": "glog-99b994cc-3e86-40f5-b4d7-747c74c637b4",
               "name": "javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-domain",
               "shortDescription": {
                 "text": "Semgrep Finding: javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-domain"
@@ -362,32 +362,7 @@
               }
             },
             {
-              "id": "glog-217bebf3-6327-4902-9155-059cb63f66d5",
-              "name": "javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-httponly",
-              "shortDescription": {
-                "text": "Semgrep Finding: javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-httponly"
-              },
-              "fullDescription": {
-                "text": "Default session middleware settings: `httpOnly` not set. It ensures the cookie is sent only over HTTP(S), not client JavaScript, helping to protect against cross-site scripting attacks."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "helpUri": "https://semgrep.dev/r/javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-httponly",
-              "help": {
-                "text": "Default session middleware settings: `httpOnly` not set. It ensures the cookie is sent only over HTTP(S), not client JavaScript, helping to protect against cross-site scripting attacks.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Default session middleware settings: `httpOnly` not set. It ensures the cookie is sent only over HTTP(S), not client JavaScript, helping to protect against cross-site scripting attacks.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [Semgrep Rule](https://semgrep.dev/r/javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-httponly)\n - [https://owasp.org/Top10/A04_2021-Insecure_Design](https://owasp.org/Top10/A04_2021-Insecure_Design)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-httponly"
-                ]
-              }
-            },
-            {
-              "id": "glog-2b9c977e-f546-4607-a6e0-9110479143c4",
+              "id": "glog-fa4f79cb-d5c6-4bfa-9ee1-c404eee9c3bd",
               "name": "javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-expires",
               "shortDescription": {
                 "text": "Semgrep Finding: javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-expires"
@@ -412,7 +387,32 @@
               }
             },
             {
-              "id": "glog-e1f8a598-ff17-42dc-ae42-f359ed58bbc6",
+              "id": "glog-b284d8be-7ee7-46d1-a1c5-173c484e1ee7",
+              "name": "javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-httponly",
+              "shortDescription": {
+                "text": "Semgrep Finding: javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-httponly"
+              },
+              "fullDescription": {
+                "text": "Default session middleware settings: `httpOnly` not set. It ensures the cookie is sent only over HTTP(S), not client JavaScript, helping to protect against cross-site scripting attacks."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "helpUri": "https://semgrep.dev/r/javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-httponly",
+              "help": {
+                "text": "Default session middleware settings: `httpOnly` not set. It ensures the cookie is sent only over HTTP(S), not client JavaScript, helping to protect against cross-site scripting attacks.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Default session middleware settings: `httpOnly` not set. It ensures the cookie is sent only over HTTP(S), not client JavaScript, helping to protect against cross-site scripting attacks.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [Semgrep Rule](https://semgrep.dev/r/javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-httponly)\n - [https://owasp.org/Top10/A04_2021-Insecure_Design](https://owasp.org/Top10/A04_2021-Insecure_Design)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-httponly"
+                ]
+              }
+            },
+            {
+              "id": "glog-d935819d-fea1-4c9f-ad2e-e5c1f72adfbe",
               "name": "javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-secure",
               "shortDescription": {
                 "text": "Semgrep Finding: javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-secure"
@@ -437,7 +437,7 @@
               }
             },
             {
-              "id": "glog-8768ed51-c7e8-4ebf-8a5c-93bf700dce28",
+              "id": "glog-ba2f9145-c1f3-4cc6-85b0-e159234753a8",
               "name": "javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-path",
               "shortDescription": {
                 "text": "Semgrep Finding: javascript.express.security.audit.express-cookie-settings.express-cookie-session-no-path"
@@ -462,7 +462,57 @@
               }
             },
             {
-              "id": "glog-ed347bd0-9a81-4a72-adda-ccaaa993d4e4",
+              "id": "glog-6468b3f7-e2e4-4b0d-9c8b-d150851ebf90",
+              "name": "javascript.express.security.audit.xss.ejs.explicit-unescape.template-explicit-unescape",
+              "shortDescription": {
+                "text": "Semgrep Finding: javascript.express.security.audit.xss.ejs.explicit-unescape.template-explicit-unescape"
+              },
+              "fullDescription": {
+                "text": "Detected an explicit unescape in an EJS template, using '<%- ... %>' If external data can reach these locations, your application is exposed to a cross-site scripting (XSS) vulnerability. Use '<%= ... %>' to escape this data. If you need escaping, ensure no external data can reach this location."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "helpUri": "https://semgrep.dev/r/javascript.express.security.audit.xss.ejs.explicit-unescape.template-explicit-unescape",
+              "help": {
+                "text": "Detected an explicit unescape in an EJS template, using '<%- ... %>' If external data can reach these locations, your application is exposed to a cross-site scripting (XSS) vulnerability. Use '<%= ... %>' to escape this data. If you need escaping, ensure no external data can reach this location.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Detected an explicit unescape in an EJS template, using '<%- ... %>' If external data can reach these locations, your application is exposed to a cross-site scripting (XSS) vulnerability. Use '<%= ... %>' to escape this data. If you need escaping, ensure no external data can reach this location.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [Semgrep Rule](https://semgrep.dev/r/javascript.express.security.audit.xss.ejs.explicit-unescape.template-explicit-unescape)\n - [http://www.managerjs.com/blog/2015/05/will-ejs-escape-save-me-from-xss-sorta/](http://www.managerjs.com/blog/2015/05/will-ejs-escape-save-me-from-xss-sorta/)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "javascript.express.security.audit.xss.ejs.explicit-unescape.template-explicit-unescape"
+                ]
+              }
+            },
+            {
+              "id": "glog-6ab8a9f5-7a32-4ad1-8226-25807dc126c7",
+              "name": "javascript.express.security.audit.xss.ejs.explicit-unescape.template-explicit-unescape",
+              "shortDescription": {
+                "text": "Semgrep Finding: javascript.express.security.audit.xss.ejs.explicit-unescape.template-explicit-unescape"
+              },
+              "fullDescription": {
+                "text": "Detected an explicit unescape in an EJS template, using '<%- ... %>' If external data can reach these locations, your application is exposed to a cross-site scripting (XSS) vulnerability. Use '<%= ... %>' to escape this data. If you need escaping, ensure no external data can reach this location."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "helpUri": "https://semgrep.dev/r/javascript.express.security.audit.xss.ejs.explicit-unescape.template-explicit-unescape",
+              "help": {
+                "text": "Detected an explicit unescape in an EJS template, using '<%- ... %>' If external data can reach these locations, your application is exposed to a cross-site scripting (XSS) vulnerability. Use '<%= ... %>' to escape this data. If you need escaping, ensure no external data can reach this location.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Detected an explicit unescape in an EJS template, using '<%- ... %>' If external data can reach these locations, your application is exposed to a cross-site scripting (XSS) vulnerability. Use '<%= ... %>' to escape this data. If you need escaping, ensure no external data can reach this location.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [Semgrep Rule](https://semgrep.dev/r/javascript.express.security.audit.xss.ejs.explicit-unescape.template-explicit-unescape)\n - [http://www.managerjs.com/blog/2015/05/will-ejs-escape-save-me-from-xss-sorta/](http://www.managerjs.com/blog/2015/05/will-ejs-escape-save-me-from-xss-sorta/)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "javascript.express.security.audit.xss.ejs.explicit-unescape.template-explicit-unescape"
+                ]
+              }
+            },
+            {
+              "id": "glog-728d43f2-6427-4a61-a3f3-fbaae179fd35",
               "name": "javascript.express.security.audit.express-session-hardcoded-secret.express-session-hardcoded-secret",
               "shortDescription": {
                 "text": "Semgrep Finding: javascript.express.security.audit.express-session-hardcoded-secret.express-session-hardcoded-secret"
@@ -487,7 +537,7 @@
               }
             },
             {
-              "id": "glog-b86e99bd-c180-4abf-a0a4-a15420a220d6",
+              "id": "glog-13f22828-1508-4cf0-aa26-6d69a42178b3",
               "name": "javascript.express.security.audit.xss.ejs.explicit-unescape.template-explicit-unescape",
               "shortDescription": {
                 "text": "Semgrep Finding: javascript.express.security.audit.xss.ejs.explicit-unescape.template-explicit-unescape"
@@ -512,7 +562,7 @@
               }
             },
             {
-              "id": "glog-24ea7ea9-fb66-4e3f-a993-ed17550860b7",
+              "id": "glog-2bfdd9b5-2e8d-49f1-8383-5d424338c165",
               "name": "javascript.express.security.audit.xss.ejs.explicit-unescape.template-explicit-unescape",
               "shortDescription": {
                 "text": "Semgrep Finding: javascript.express.security.audit.xss.ejs.explicit-unescape.template-explicit-unescape"
@@ -537,7 +587,7 @@
               }
             },
             {
-              "id": "glog-c9db1b7e-f5f8-4984-96ab-67ad00c7c07c",
+              "id": "glog-9544c492-5ccf-45bf-bf20-e10e0aa2cd63",
               "name": "javascript.express.security.audit.xss.ejs.explicit-unescape.template-explicit-unescape",
               "shortDescription": {
                 "text": "Semgrep Finding: javascript.express.security.audit.xss.ejs.explicit-unescape.template-explicit-unescape"
@@ -562,57 +612,7 @@
               }
             },
             {
-              "id": "glog-d93ea0a5-3472-4842-bd25-fd18719619ec",
-              "name": "javascript.express.security.audit.xss.ejs.explicit-unescape.template-explicit-unescape",
-              "shortDescription": {
-                "text": "Semgrep Finding: javascript.express.security.audit.xss.ejs.explicit-unescape.template-explicit-unescape"
-              },
-              "fullDescription": {
-                "text": "Detected an explicit unescape in an EJS template, using '<%- ... %>' If external data can reach these locations, your application is exposed to a cross-site scripting (XSS) vulnerability. Use '<%= ... %>' to escape this data. If you need escaping, ensure no external data can reach this location."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "helpUri": "https://semgrep.dev/r/javascript.express.security.audit.xss.ejs.explicit-unescape.template-explicit-unescape",
-              "help": {
-                "text": "Detected an explicit unescape in an EJS template, using '<%- ... %>' If external data can reach these locations, your application is exposed to a cross-site scripting (XSS) vulnerability. Use '<%= ... %>' to escape this data. If you need escaping, ensure no external data can reach this location.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Detected an explicit unescape in an EJS template, using '<%- ... %>' If external data can reach these locations, your application is exposed to a cross-site scripting (XSS) vulnerability. Use '<%= ... %>' to escape this data. If you need escaping, ensure no external data can reach this location.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [Semgrep Rule](https://semgrep.dev/r/javascript.express.security.audit.xss.ejs.explicit-unescape.template-explicit-unescape)\n - [http://www.managerjs.com/blog/2015/05/will-ejs-escape-save-me-from-xss-sorta/](http://www.managerjs.com/blog/2015/05/will-ejs-escape-save-me-from-xss-sorta/)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "javascript.express.security.audit.xss.ejs.explicit-unescape.template-explicit-unescape"
-                ]
-              }
-            },
-            {
-              "id": "glog-765b244c-4283-494a-9c95-575fa05fac96",
-              "name": "javascript.express.security.audit.xss.ejs.explicit-unescape.template-explicit-unescape",
-              "shortDescription": {
-                "text": "Semgrep Finding: javascript.express.security.audit.xss.ejs.explicit-unescape.template-explicit-unescape"
-              },
-              "fullDescription": {
-                "text": "Detected an explicit unescape in an EJS template, using '<%- ... %>' If external data can reach these locations, your application is exposed to a cross-site scripting (XSS) vulnerability. Use '<%= ... %>' to escape this data. If you need escaping, ensure no external data can reach this location."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "helpUri": "https://semgrep.dev/r/javascript.express.security.audit.xss.ejs.explicit-unescape.template-explicit-unescape",
-              "help": {
-                "text": "Detected an explicit unescape in an EJS template, using '<%- ... %>' If external data can reach these locations, your application is exposed to a cross-site scripting (XSS) vulnerability. Use '<%= ... %>' to escape this data. If you need escaping, ensure no external data can reach this location.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Detected an explicit unescape in an EJS template, using '<%- ... %>' If external data can reach these locations, your application is exposed to a cross-site scripting (XSS) vulnerability. Use '<%= ... %>' to escape this data. If you need escaping, ensure no external data can reach this location.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [Semgrep Rule](https://semgrep.dev/r/javascript.express.security.audit.xss.ejs.explicit-unescape.template-explicit-unescape)\n - [http://www.managerjs.com/blog/2015/05/will-ejs-escape-save-me-from-xss-sorta/](http://www.managerjs.com/blog/2015/05/will-ejs-escape-save-me-from-xss-sorta/)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "javascript.express.security.audit.xss.ejs.explicit-unescape.template-explicit-unescape"
-                ]
-              }
-            },
-            {
-              "id": "glog-331acb1f-b1b2-4801-91ff-d62a26dfdb6c",
+              "id": "glog-e929427a-8585-449a-8a69-c4910125d1ff",
               "name": "javascript.express.security.audit.xss.ejs.explicit-unescape.template-explicit-unescape",
               "shortDescription": {
                 "text": "Semgrep Finding: javascript.express.security.audit.xss.ejs.explicit-unescape.template-explicit-unescape"
@@ -648,100 +648,7 @@
       "language": "en-US",
       "results": [
         {
-          "ruleId": "glog-37b3fee2-b662-4f40-a2d2-f6358d5aa35f",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "If TLS is disabled on server side (Postgresql server), Sequelize establishes connection without TLS and no error will be thrown. To prevent MITN (Man In The Middle) attack, TLS must be enforce by Sequelize. Set \"ssl: true\" or define settings \"ssl: {...}\""
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "config/db.js",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 18,
-                  "endLine": 8,
-                  "endColumn": 2,
-                  "snippet": {
-                    "text": "module.exports = {\n  username: process.env.MYSQL_USER,\n  password: process.env.MYSQL_PASSWORD,\n  database: process.env.MYSQL_DATABASE,\n  host: process.env.MYSQL_HOST || 'mysql-db',\n  port: process.env.MYSQL_PORT || 3306,\n  dialect: 'mysql'\n}"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "requires login"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "glog-f64dc30f-6fa1-470f-8063-28713746ed15",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "By not specifying a USER, a program in the container may run as 'root'. This is a security hazard. If an attacker can control a process running as root, they may have control over the container. Ensure that the last USER in a Dockerfile is a USER other than 'root'."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "Dockerfile",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 13,
-                  "startColumn": 1,
-                  "endLine": 13,
-                  "endColumn": 35,
-                  "snippet": {
-                    "text": "CMD [\"bash\", \"/app/entrypoint.sh\"]"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "requires login"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "glog-29846318-45bb-4ad2-9be8-900d8d7ee49e",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Using variable interpolation `${{...}}` with `github` context data in a `run:` step could allow an attacker to inject their own code into the runner. This would allow them to steal secrets and code. `github` context data can have arbitrary user input and should be treated as untrusted. Instead, use an intermediate environment variable with `env:` to store the data and use the environment variable in the `run:` script. Be sure to use double-quotes the environment variable, like this: \"$ENVVAR\"."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": ".github/glog-action/action.yml",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 41,
-                  "startColumn": 7,
-                  "endLine": 41,
-                  "endColumn": 108,
-                  "snippet": {
-                    "text": "      run: echo \"${{ inputs.github-token }}\" | docker login ghcr.io -u ${{ github.actor }} --password-stdin"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "requires login"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "glog-c90ea080-d4d6-48d5-94ad-7de42926e1af",
+          "ruleId": "glog-702852b2-09ea-4fb0-b6ac-a67a04cffe80",
           "kind": "fail",
           "level": "warning",
           "message": {
@@ -772,7 +679,38 @@
           "properties": {}
         },
         {
-          "ruleId": "glog-2aa45d84-8383-4c5a-a9ea-aa406a57b71d",
+          "ruleId": "glog-5382c16c-a32e-4158-a9d0-fc09768c5337",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "By not specifying a USER, a program in the container may run as 'root'. This is a security hazard. If an attacker can control a process running as root, they may have control over the container. Ensure that the last USER in a Dockerfile is a USER other than 'root'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Dockerfile",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 1,
+                  "endLine": 13,
+                  "endColumn": 35,
+                  "snippet": {
+                    "text": "CMD [\"bash\", \"/app/entrypoint.sh\"]"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "requires login"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "glog-ffbf0567-6eaf-4651-b024-eddb8fce4d23",
           "kind": "fail",
           "level": "warning",
           "message": {
@@ -803,7 +741,69 @@
           "properties": {}
         },
         {
-          "ruleId": "glog-5d541461-c89a-41eb-a287-a343c887c1f4",
+          "ruleId": "glog-4356eba8-6eaf-4f25-8232-08c1159301dc",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Using variable interpolation `${{...}}` with `github` context data in a `run:` step could allow an attacker to inject their own code into the runner. This would allow them to steal secrets and code. `github` context data can have arbitrary user input and should be treated as untrusted. Instead, use an intermediate environment variable with `env:` to store the data and use the environment variable in the `run:` script. Be sure to use double-quotes the environment variable, like this: \"$ENVVAR\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": ".github/glog-action/action.yml",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 7,
+                  "endLine": 41,
+                  "endColumn": 108,
+                  "snippet": {
+                    "text": "      run: echo \"${{ inputs.github-token }}\" | docker login ghcr.io -u ${{ github.actor }} --password-stdin"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "requires login"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "glog-793c923d-c55c-4666-aea5-302215cf9429",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "If TLS is disabled on server side (Postgresql server), Sequelize establishes connection without TLS and no error will be thrown. To prevent MITN (Man In The Middle) attack, TLS must be enforce by Sequelize. Set \"ssl: true\" or define settings \"ssl: {...}\""
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "config/db.js",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 18,
+                  "endLine": 8,
+                  "endColumn": 2,
+                  "snippet": {
+                    "text": "module.exports = {\n  username: process.env.MYSQL_USER,\n  password: process.env.MYSQL_PASSWORD,\n  database: process.env.MYSQL_DATABASE,\n  host: process.env.MYSQL_HOST || 'mysql-db',\n  port: process.env.MYSQL_PORT || 3306,\n  dialect: 'mysql'\n}"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "requires login"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "glog-a14f7379-b784-488a-851c-b7824ad39881",
           "kind": "fail",
           "level": "warning",
           "message": {
@@ -834,7 +834,7 @@
           "properties": {}
         },
         {
-          "ruleId": "glog-8469e904-59d4-4c88-b200-740851da8d29",
+          "ruleId": "glog-559db094-75d6-437f-80e5-4ed3da056477",
           "kind": "fail",
           "level": "warning",
           "message": {
@@ -865,100 +865,7 @@
           "properties": {}
         },
         {
-          "ruleId": "glog-7857739d-a55d-48e4-b22c-6e30afc874eb",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "The libxml library processes user-input with the `noent` attribute is set to `true` which can lead to being vulnerable to XML External Entities (XXE) type attacks. It is recommended to set `noent` to `false` when using this feature to ensure you are protected."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "core/appHandler.js",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 235,
-                  "startColumn": 42,
-                  "endLine": 235,
-                  "endColumn": 82,
-                  "snippet": {
-                    "text": "\t\tvar products = libxmljs.parseXmlString(req.files.products.data.toString('utf8'), {noent:true,noblanks:true})"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "requires login"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "glog-871ec2e2-6962-4037-9254-8772c5496e19",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Service 'mysql-db' is running with a writable root filesystem. This may allow malicious applications to download and run additional payloads, or modify container files. If an application inside a container has to save something temporarily consider using a tmpfs. Add 'read_only: true' to this service to prevent this."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "docker-compose.yml",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 18,
-                  "startColumn": 3,
-                  "endLine": 18,
-                  "endColumn": 11,
-                  "snippet": {
-                    "text": "  mysql-db:"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "requires login"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "glog-85c94314-6755-4b5f-99c7-519240468379",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Detected possible user input going into a `path.join` or `path.resolve` function. This could possibly lead to a path traversal vulnerability,  where the attacker can access arbitrary files stored in the file system. Instead, be sure to sanitize or validate user input first."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "models/index.js",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 43,
-                  "startColumn": 55,
-                  "endLine": 43,
-                  "endColumn": 59,
-                  "snippet": {
-                    "text": "    var model = sequelize.import(path.join(__dirname, file));"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "requires login"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "glog-765d070e-1f8f-43c9-b481-5af1f8563bba",
+          "ruleId": "glog-1669147b-cde1-42bc-ad77-361f0217ec09",
           "kind": "fail",
           "level": "warning",
           "message": {
@@ -989,7 +896,69 @@
           "properties": {}
         },
         {
-          "ruleId": "glog-e5bfe833-b01f-48b7-b34b-1e233fd8eb2a",
+          "ruleId": "glog-58628f87-aaa6-4630-bfee-994715b22c1e",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Service 'mysql-db' is running with a writable root filesystem. This may allow malicious applications to download and run additional payloads, or modify container files. If an application inside a container has to save something temporarily consider using a tmpfs. Add 'read_only: true' to this service to prevent this."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docker-compose.yml",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 3,
+                  "endLine": 18,
+                  "endColumn": 11,
+                  "snippet": {
+                    "text": "  mysql-db:"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "requires login"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "glog-b226f886-08d1-4c60-af41-b212195ce344",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "The libxml library processes user-input with the `noent` attribute is set to `true` which can lead to being vulnerable to XML External Entities (XXE) type attacks. It is recommended to set `noent` to `false` when using this feature to ensure you are protected."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "core/appHandler.js",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 235,
+                  "startColumn": 42,
+                  "endLine": 235,
+                  "endColumn": 82,
+                  "snippet": {
+                    "text": "\t\tvar products = libxmljs.parseXmlString(req.files.products.data.toString('utf8'), {noent:true,noblanks:true})"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "requires login"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "glog-d5d8f3f9-ec28-43de-816a-7187b79f2f46",
           "kind": "fail",
           "level": "warning",
           "message": {
@@ -1020,7 +989,38 @@
           "properties": {}
         },
         {
-          "ruleId": "glog-68faa819-8734-4ec0-ba73-868b3f3f6b59",
+          "ruleId": "glog-ee70c802-bd82-4a1b-8955-aac005b7d438",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Detected possible user input going into a `path.join` or `path.resolve` function. This could possibly lead to a path traversal vulnerability,  where the attacker can access arbitrary files stored in the file system. Instead, be sure to sanitize or validate user input first."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "models/index.js",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 55,
+                  "endLine": 43,
+                  "endColumn": 59,
+                  "snippet": {
+                    "text": "    var model = sequelize.import(path.join(__dirname, file));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "requires login"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "glog-cdb04f7c-6a6b-4aae-b024-a2a4ff55ca62",
           "kind": "fail",
           "level": "warning",
           "message": {
@@ -1051,100 +1051,7 @@
           "properties": {}
         },
         {
-          "ruleId": "glog-217bebf3-6327-4902-9155-059cb63f66d5",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Default session middleware settings: `httpOnly` not set. It ensures the cookie is sent only over HTTP(S), not client JavaScript, helping to protect against cross-site scripting attacks."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "server.js",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 23,
-                  "startColumn": 9,
-                  "endLine": 28,
-                  "endColumn": 3,
-                  "snippet": {
-                    "text": "app.use(session({\n  secret: 'keyboard cat',\n  resave: true,\n  saveUninitialized: true,\n  cookie: { secure: false }\n}))"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "requires login"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "glog-85e6284d-c40a-4bb4-97d5-0175d52a23ae",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Default session middleware settings: `domain` not set. It indicates the domain of the cookie; use it to compare against the domain of the server in which the URL is being requested. If they match, then check the path attribute next."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "server.js",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 23,
-                  "startColumn": 9,
-                  "endLine": 28,
-                  "endColumn": 3,
-                  "snippet": {
-                    "text": "app.use(session({\n  secret: 'keyboard cat',\n  resave: true,\n  saveUninitialized: true,\n  cookie: { secure: false }\n}))"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "requires login"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "glog-e1f8a598-ff17-42dc-ae42-f359ed58bbc6",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Default session middleware settings: `secure` not set. It ensures the browser only sends the cookie over HTTPS."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "server.js",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 23,
-                  "startColumn": 9,
-                  "endLine": 28,
-                  "endColumn": 3,
-                  "snippet": {
-                    "text": "app.use(session({\n  secret: 'keyboard cat',\n  resave: true,\n  saveUninitialized: true,\n  cookie: { secure: false }\n}))"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "requires login"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "glog-2b9c977e-f546-4607-a6e0-9110479143c4",
+          "ruleId": "glog-fa4f79cb-d5c6-4bfa-9ee1-c404eee9c3bd",
           "kind": "fail",
           "level": "warning",
           "message": {
@@ -1175,7 +1082,100 @@
           "properties": {}
         },
         {
-          "ruleId": "glog-8768ed51-c7e8-4ebf-8a5c-93bf700dce28",
+          "ruleId": "glog-99b994cc-3e86-40f5-b4d7-747c74c637b4",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Default session middleware settings: `domain` not set. It indicates the domain of the cookie; use it to compare against the domain of the server in which the URL is being requested. If they match, then check the path attribute next."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "server.js",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 9,
+                  "endLine": 28,
+                  "endColumn": 3,
+                  "snippet": {
+                    "text": "app.use(session({\n  secret: 'keyboard cat',\n  resave: true,\n  saveUninitialized: true,\n  cookie: { secure: false }\n}))"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "requires login"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "glog-b284d8be-7ee7-46d1-a1c5-173c484e1ee7",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Default session middleware settings: `httpOnly` not set. It ensures the cookie is sent only over HTTP(S), not client JavaScript, helping to protect against cross-site scripting attacks."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "server.js",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 9,
+                  "endLine": 28,
+                  "endColumn": 3,
+                  "snippet": {
+                    "text": "app.use(session({\n  secret: 'keyboard cat',\n  resave: true,\n  saveUninitialized: true,\n  cookie: { secure: false }\n}))"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "requires login"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "glog-d935819d-fea1-4c9f-ad2e-e5c1f72adfbe",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Default session middleware settings: `secure` not set. It ensures the browser only sends the cookie over HTTPS."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "server.js",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 9,
+                  "endLine": 28,
+                  "endColumn": 3,
+                  "snippet": {
+                    "text": "app.use(session({\n  secret: 'keyboard cat',\n  resave: true,\n  saveUninitialized: true,\n  cookie: { secure: false }\n}))"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "requires login"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "glog-ba2f9145-c1f3-4cc6-85b0-e159234753a8",
           "kind": "fail",
           "level": "warning",
           "message": {
@@ -1206,69 +1206,7 @@
           "properties": {}
         },
         {
-          "ruleId": "glog-b86e99bd-c180-4abf-a0a4-a15420a220d6",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Detected an explicit unescape in an EJS template, using '<%- ... %>' If external data can reach these locations, your application is exposed to a cross-site scripting (XSS) vulnerability. Use '<%= ... %>' to escape this data. If you need escaping, ensure no external data can reach this location."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "views/app/products.ejs",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 20,
-                  "startColumn": 71,
-                  "endLine": 20,
-                  "endColumn": 95,
-                  "snippet": {
-                    "text": "                Listing products with <strong>search query: </strong> <%- output.searchTerm %>"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "requires login"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "glog-ed347bd0-9a81-4a72-adda-ccaaa993d4e4",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "A hard-coded credential was detected. It is not recommended to store credentials in source-code, as this risks secrets being leaked and used by either an internal or external malicious adversary. It is recommended to use environment variables to securely provide credentials or retrieve credentials from a secure vault or HSM (Hardware Security Module)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "server.js",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 24,
-                  "startColumn": 3,
-                  "endLine": 24,
-                  "endColumn": 25,
-                  "snippet": {
-                    "text": "  secret: 'keyboard cat',"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "requires login"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "glog-24ea7ea9-fb66-4e3f-a993-ed17550860b7",
+          "ruleId": "glog-6ab8a9f5-7a32-4ad1-8226-25807dc126c7",
           "kind": "fail",
           "level": "warning",
           "message": {
@@ -1299,7 +1237,38 @@
           "properties": {}
         },
         {
-          "ruleId": "glog-c9db1b7e-f5f8-4984-96ab-67ad00c7c07c",
+          "ruleId": "glog-728d43f2-6427-4a61-a3f3-fbaae179fd35",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "A hard-coded credential was detected. It is not recommended to store credentials in source-code, as this risks secrets being leaked and used by either an internal or external malicious adversary. It is recommended to use environment variables to securely provide credentials or retrieve credentials from a secure vault or HSM (Hardware Security Module)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "server.js",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 3,
+                  "endLine": 24,
+                  "endColumn": 25,
+                  "snippet": {
+                    "text": "  secret: 'keyboard cat',"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "requires login"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "glog-6468b3f7-e2e4-4b0d-9c8b-d150851ebf90",
           "kind": "fail",
           "level": "warning",
           "message": {
@@ -1313,12 +1282,12 @@
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 51,
-                  "startColumn": 21,
-                  "endLine": 51,
-                  "endColumn": 51,
+                  "startLine": 20,
+                  "startColumn": 71,
+                  "endLine": 20,
+                  "endColumn": 95,
                   "snippet": {
-                    "text": "                <td><%- output.products[i].code %></td>"
+                    "text": "                Listing products with <strong>search query: </strong> <%- output.searchTerm %>"
                   }
                 }
               }
@@ -1330,7 +1299,7 @@
           "properties": {}
         },
         {
-          "ruleId": "glog-d93ea0a5-3472-4842-bd25-fd18719619ec",
+          "ruleId": "glog-13f22828-1508-4cf0-aa26-6d69a42178b3",
           "kind": "fail",
           "level": "warning",
           "message": {
@@ -1361,38 +1330,7 @@
           "properties": {}
         },
         {
-          "ruleId": "glog-765b244c-4283-494a-9c95-575fa05fac96",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Detected an explicit unescape in an EJS template, using '<%- ... %>' If external data can reach these locations, your application is exposed to a cross-site scripting (XSS) vulnerability. Use '<%= ... %>' to escape this data. If you need escaping, ensure no external data can reach this location."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "views/app/products.ejs",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 52,
-                  "startColumn": 21,
-                  "endLine": 52,
-                  "endColumn": 51,
-                  "snippet": {
-                    "text": "                <td><%- output.products[i].tags %></td>"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "requires login"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "glog-331acb1f-b1b2-4801-91ff-d62a26dfdb6c",
+          "ruleId": "glog-9544c492-5ccf-45bf-bf20-e10e0aa2cd63",
           "kind": "fail",
           "level": "warning",
           "message": {
@@ -1412,6 +1350,68 @@
                   "endColumn": 58,
                   "snippet": {
                     "text": "                <td><%- output.products[i].description %></td>"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "requires login"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "glog-e929427a-8585-449a-8a69-c4910125d1ff",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Detected an explicit unescape in an EJS template, using '<%- ... %>' If external data can reach these locations, your application is exposed to a cross-site scripting (XSS) vulnerability. Use '<%= ... %>' to escape this data. If you need escaping, ensure no external data can reach this location."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "views/app/products.ejs",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 51,
+                  "startColumn": 21,
+                  "endLine": 51,
+                  "endColumn": 51,
+                  "snippet": {
+                    "text": "                <td><%- output.products[i].code %></td>"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "requires login"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "glog-2bfdd9b5-2e8d-49f1-8383-5d424338c165",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Detected an explicit unescape in an EJS template, using '<%- ... %>' If external data can reach these locations, your application is exposed to a cross-site scripting (XSS) vulnerability. Use '<%= ... %>' to escape this data. If you need escaping, ensure no external data can reach this location."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "views/app/products.ejs",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 52,
+                  "startColumn": 21,
+                  "endLine": 52,
+                  "endColumn": 51,
+                  "snippet": {
+                    "text": "                <td><%- output.products[i].tags %></td>"
                   }
                 }
               }
