@@ -16,7 +16,7 @@ jobs:
           repository: glogai/glog-action
           token: ${{ secrets.PAT_TOKEN }}
           path: .github/glog-action
-          ref: asdf/multiple-images-for-lang
+          ref: feature/multiple-images-for-lang
 
       - name: Run Glog.AI from private repo
         uses: ./.github/glog-action
