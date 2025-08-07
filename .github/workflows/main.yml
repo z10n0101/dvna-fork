@@ -17,6 +17,12 @@ jobs:
           token: ${{ secrets.PAT_TOKEN }}
           path: .github/glog-action
           ref: feature/multiple-images-for-lang
+          
+      - name: Run
+        run: ls -la
+
+      - name: Run2
+        run: cat ./.github/glog-action/glog.sh
 
       - name: Run Glog.AI from private repo
         uses: ./.github/glog-action
